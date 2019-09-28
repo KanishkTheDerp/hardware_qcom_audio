@@ -160,11 +160,11 @@ LOCAL_MODULE:= libvolumelistener
 LOCAL_VENDOR_MODULE := true
 
 LOCAL_C_INCLUDES := \
-        $(call project-path-for,qcom-audio)/hal \
+        hardware/qcom/audio-caf/msm8996/hal \
         external/tinyalsa/include \
         $(call include-path-for, audio-effects) \
         $(call include-path-for, audio-route) \
-        $(call project-path-for,qcom-audio)/hal/audio_extn \
+        hardware/qcom/audio-caf/msm8996/hal/audio_extn \
         external/tinycompress/include
 
 ifeq ($(strip $(AUDIO_FEATURE_ENABLED_DLKM)),true)
